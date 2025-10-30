@@ -1,0 +1,41 @@
+diff a/Assets/#illegaldrone/2.RJH/Scripts/TrainingScenarioSetting/ObjectRayCastController.cs b/Assets/#illegaldrone/2.RJH/Scripts/TrainingScenarioSetting/ObjectRayCastController.cs	(rejected hunks)
+@@ -155,15 +155,33 @@
+ 
+         private Vector3 GetValidNavMeshPosition(Vector3 position)
+         {
++            Ray ray = Camera.main.ScreenPointToRay(position);
++            //Vector3 naviMeshPosition = new Vector3(position.x, TraineeNaviMesh.localPosition.y, position.z);
+             // NavMesh ���� ��ȿ�� ��ġ ���ø�
+-            if (NavMesh.SamplePosition(position, out NavMeshHit navMeshHit, navMeshMaxDistance, NavMesh.AllAreas))
++            if (Physics.Raycast(ray, out RaycastHit hit, 1200f, targetLayerMask))
+             {
+-                return navMeshHit.position; // NavMesh ���� ��ġ ��ȯ
+-            }
+-            else
+-            {
+-                return selectedObject.transform.position; // NavMesh ���̸� ���� ��ġ ����
++                if (NavMesh.SamplePosition(hit.transform.position, out NavMeshHit navMeshHit, navMeshMaxDistance, NavMesh.AllAreas))
++                {
++                    Debug.Log("��ġ ����");
++                    return new Vector3(navMeshHit.position.x, position.y, navMeshHit.position.z); // NavMesh ���� ��ġ ��ȯ
++                }
++                else
++                {
++                    Debug.Log("��ġ �Ұ���");
++                    return new Vector3(0, 0, 0); // NavMesh ���̸� ���� ��ġ ����
++                }
+             }
++            return new Vector3(0, 0, 0);
++            //if (NavMesh.SamplePosition(naviMeshPosition, out NavMeshHit navMeshHit, navMeshMaxDistance, NavMesh.AllAreas))
++            //{
++            //    Debug.Log("��ġ ����");
++            //    return new Vector3(navMeshHit.position.x, position.y, navMeshHit.position.z); // NavMesh ���� ��ġ ��ȯ
++            //}
++            //else
++            //{
++            //    Debug.Log("��ġ �Ұ���");
++            //    return new Vector3(0, 0, 0); // NavMesh ���̸� ���� ��ġ ����
++            //}
+         }
+     }
+ 
