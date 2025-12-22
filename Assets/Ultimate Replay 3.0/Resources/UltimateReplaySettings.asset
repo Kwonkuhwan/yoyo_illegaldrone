@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7259168581933950646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6433425ae01a1245b39532acd227ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replayPrefab: {fileID: 1528006280081144037, guid: a631c8b20cc9d37438b157ce130fdb36,
+    type: 3}
+  allowPooling: 1
+--- !u!114 &-6616628624385774679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6433425ae01a1245b39532acd227ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replayPrefab: {fileID: 8921718694655641067, guid: d62f3047429faa24c929afc39c86897e,
+    type: 3}
+  allowPooling: 1
+--- !u!114 &-4559981287247174320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6433425ae01a1245b39532acd227ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replayPrefab: {fileID: 2903599669225549042, guid: 43f081b2774ccaa4782988a1c1775cb7,
+    type: 3}
+  allowPooling: 1
+--- !u!114 &-1901767728866428407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6433425ae01a1245b39532acd227ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replayPrefab: {fileID: 2266790890463209931, guid: 2eab82ae128eba54ba56bd2f5ba90231,
+    type: 3}
+  allowPooling: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b72ff0dcd2bee64c986e5d74e58037c, type: 3}
+  m_Name: UltimateReplaySettings
+  m_EditorClassIdentifier: 
+  recordOptions:
+    recordFPS: 12
+    recordUpdateMode: 1
+  playbackOptions:
+    playbackFPS: -1
+    playbackEndBehaviour: 2
+    playbackUpdateMode: 1
+  sceneDiscovery: 0
+  prefabProviders:
+  - {fileID: -4559981287247174320}
+  - {fileID: 4194032669919739403}
+  - {fileID: -6616628624385774679}
+  - {fileID: 4369575038807738994}
+  - {fileID: 2544431098673859584}
+  - {fileID: 8538626527386308969}
+  - {fileID: -1901767728866428407}
+  - {fileID: 110390547418449900}
+  - {fileID: 8362686495294762815}
+  - {fileID: -7259168581933950646}
+  defaultReplayPreparer:
+    skipTypes:
+    - assemblyQualifiedTypeName: UltimateReplay.ReplayObject, UltimateReplay, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    - assemblyQualifiedTypeName: UltimateReplay.ReplayBehaviour, UltimateReplay,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - assemblyQualifiedTypeName: UnityEngine.Camera, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    - assemblyQualifiedTypeName: UnityEngine.AudioSource, UnityEngine.AudioModule,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - assemblyQualifiedTypeName: UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - assemblyQualifiedTypeName: UnityEngine.Canvas, UnityEngine.UIModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    - assemblyQualifiedTypeName: SMW.Rifle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    - assemblyQualifiedTypeName: SMW.LaserPoint, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    - assemblyQualifiedTypeName: UnityEngine.Collider, UnityEngine.PhysicsModule,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - assemblyQualifiedTypeName: SMW.DroneState, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    - assemblyQualifiedTypeName: SMW.PlayerCam, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    preparerSettings:
+    - componentPreparerType:
+        assemblyQualifiedTypeName: UnityEngine.EventSystems.UIBehaviour, UnityEngine.UI,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      enabled: 1
+    - componentPreparerType:
+        assemblyQualifiedTypeName: UnityEngine.Animator, UnityEngine.AnimationModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      enabled: 1
+    - componentPreparerType:
+        assemblyQualifiedTypeName: UnityEngine.Behaviour, UnityEngine.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      enabled: 1
+    - componentPreparerType:
+        assemblyQualifiedTypeName: UnityEngine.Collider, UnityEngine.PhysicsModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      enabled: 1
+    - componentPreparerType:
+        assemblyQualifiedTypeName: UnityEngine.Collider2D, UnityEngine.Physics2DModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      enabled: 1
+    - componentPreparerType:
+        assemblyQualifiedTypeName: UnityEngine.Rigidbody, UnityEngine.PhysicsModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      enabled: 1
+    - componentPreparerType:
+        assemblyQualifiedTypeName: UnityEngine.Rigidbody2D, UnityEngine.Physics2DModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      enabled: 1
+--- !u!114 &110390547418449900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6433425ae01a1245b39532acd227ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replayPrefab: {fileID: 3737637524004894269, guid: 7fa3c37fa3939114fb865a379ee19d20,
+    type: 3}
+  allowPooling: 1
+--- !u!114 &2544431098673859584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6433425ae01a1245b39532acd227ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replayPrefab: {fileID: 2766687260872480955, guid: 5c86b528232a08b40aaf96c35010f682,
+    type: 3}
+  allowPooling: 1
+--- !u!114 &4194032669919739403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6433425ae01a1245b39532acd227ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replayPrefab: {fileID: 4007198869880727780, guid: edee358b44d817c4aafa4c2f017c81a9,
+    type: 3}
+  allowPooling: 1
+--- !u!114 &4369575038807738994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6433425ae01a1245b39532acd227ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replayPrefab: {fileID: 2992603219638650304, guid: 1afb45c04f3af7a47872cee81a9c374f,
+    type: 3}
+  allowPooling: 1
+--- !u!114 &8362686495294762815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6433425ae01a1245b39532acd227ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replayPrefab: {fileID: 9195104748357971812, guid: e733bed5e8788b940a7827555cd1c736,
+    type: 3}
+  allowPooling: 1
+--- !u!114 &8538626527386308969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6433425ae01a1245b39532acd227ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replayPrefab: {fileID: 266098884121170905, guid: 3744e7a59bc17c543acbe8ec35390d57,
+    type: 3}
+  allowPooling: 1
